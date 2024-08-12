@@ -1,0 +1,13 @@
+version: "latest"
+
+services:
+  db:
+    container_name: task-management
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
