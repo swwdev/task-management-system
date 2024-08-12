@@ -56,7 +56,7 @@ API документация доступна через Swagger UI.
 ## Installation
 1. Клонируйте репозиторий:
     ```sh
-    git clone https://github.com/sw/task-management-system.git
+    git clone git@github.com:swwdev/task-management-system.git
     cd task-management-system
     ```
 
