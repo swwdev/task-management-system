@@ -134,6 +134,12 @@
 							<artifactId>lombok-mapstruct-binding</artifactId>
 						</exclude>
 					</excludes>
+					<image>
+						<name>task-management:${project.version}</name>
+					</image>
+					<docker>
+						<host>//./pipe/dockerDesktopLinuxEngine</host>
+					</docker>
 				</configuration>
 			</plugin>
 
@@ -159,8 +165,8 @@
 							<version>${lombok-mapstruct-binding.version}</version>
 						</path>
 					</annotationProcessorPaths>
-					<source>19</source>
-					<target>19</target>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 					<compilerArgs>--enable-preview</compilerArgs>
 				</configuration>
 			</plugin>

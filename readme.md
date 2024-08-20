@@ -56,30 +56,17 @@ API документация доступна через Swagger UI.
 ## Installation
 1. Клонируйте репозиторий:
     ```sh
-    git clone https://github.com/sw/task-management-system.git
+    git clone git@github.com:swwdev/task-management-system.git
     cd task-management-system
     ```
 
-2. Установите зависимости:
-    ```sh
-    ./mvnw package
-    ```
-
-3. Настройте базу данных с использованием Docker:
+2. Запустите приложение с использованием Docker:
     - Убедитесь, что Docker установлен и запущен.
-    - Запустите базу данных:
+    - Запустите приложение при помощи Docker c помощи следующих команд:
         ```sh
+        cd docker
         docker-compose up -d
         ```
-
-4. Обновите файл `application.yml` с вашими данными для подключения к базе данных, если это необходимо.
-
-5. Установите JDK 21 или выше.
-
-6. Запустите приложение:
-    ```sh
-    java -jar target/task-management-0.0.1-SNAPSHOT.jar
-    ```
 
 ## Usage
 - Доступ к приложению можно получить по адресу `http://localhost:8080`.
